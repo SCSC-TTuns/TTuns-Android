@@ -1,0 +1,6 @@
+<resources>
+    <!-- XML에서 사용할 앱 테마. 머터리얼3 NoActionBar 상속 -->
+    <style name="Theme.Ttuns" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 필요하면 색/폰트 오버라이드 여기에 -->
+    </style>
+</resources>
