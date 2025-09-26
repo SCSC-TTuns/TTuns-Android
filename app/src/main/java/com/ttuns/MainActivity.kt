@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
 private fun WebOnlyApp() {
     MaterialTheme(colorScheme = darkColorScheme()) {
         WebTimetableScreen(
-            url = "https://ttuns.vercel.app/snutt/timetable",
+            url = "https://ttuns-web.vercel.app/",
             forceDefaults = true,
             defaultYear = 2025,
             defaultSemesterValue = "3"

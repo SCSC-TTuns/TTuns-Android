@@ -11,7 +11,7 @@ android {
         applicationId = "com.ttuns"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1
+        versionCode = 2
         versionName = "1.0"
 
         // ✅ 계측 테스트 러너
@@ -21,7 +21,7 @@ android {
         buildConfigField(
             "String",
             "TTUNS_BACKEND_BASE",
-            "\"${project.findProperty("TTUNS_BACKEND_BASE") ?: "https://ttuns.vercel.app"}\""
+            "\"${project.findProperty("TTUNS_BACKEND_BASE") ?: "https://ttuns-web.vercel.app/"}\""
         )
         buildConfigField("String", "SNUTT_API_BASE", "\"${project.findProperty("SNUTT_API_BASE") ?: ""}\"")
         buildConfigField("String", "SNUTT_API_KEY", "\"${project.findProperty("SNUTT_API_KEY") ?: ""}\"")

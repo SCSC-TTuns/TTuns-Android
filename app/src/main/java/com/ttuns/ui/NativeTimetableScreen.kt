@@ -35,7 +35,7 @@ interface SnuttProxyApi {
 }
 
 private fun retrofitForProxy(): SnuttProxyApi {
-    val base = BuildConfig.TTUNS_BACKEND_BASE.trim().ifEmpty { "https://ttuns.vercel.app" }
+    val base = BuildConfig.TTUNS_BACKEND_BASE.trim().ifEmpty { "https://ttuns-web.vercel.app/" }
     return Retrofit.Builder()
         .baseUrl(if (base.endsWith("/")) base else "$base/")
         .addConverterFactory(MoshiConverterFactory.create())
